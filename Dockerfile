@@ -1,7 +1,7 @@
 FROM alpine:3.5
-MAINTAINER Bruno Ricardo Siqueira <brunoric@gmail.com>
 
-ENV PERCONA_TOOLKIT_VERSION 3.0.1
+ARG version
+ENV PERCONA_TOOLKIT_VERSION=$version
 
 RUN set -x \
   && apk add --update perl perl-dbi perl-dbd-mysql perl-io-socket-ssl perl-term-readkey make ca-certificates wget \
