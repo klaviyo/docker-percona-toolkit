@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.17
 
 ARG version
 ENV PERCONA_TOOLKIT_VERSION=$version
